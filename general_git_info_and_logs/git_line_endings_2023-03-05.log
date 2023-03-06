@@ -1,0 +1,118 @@
+(base) C:\Users\bball>git config --global core.autocrlf true
+
+(base) C:\Users\bball>type .gitconfig
+# This is Git's per-user configuration file
+# @file    .gitconfig
+# @author  David Wallace BLACK
+# @since   2023-02-18
+[user]
+  name = David Black
+  email = bballdave025@yahoo.com
+[diff]
+  tool = vimdiff
+[merge]
+  tool = vimdiff
+# Aliases shared by Ben MURPHY.
+#+ I'll keep them here,
+#+ but I don't use them much,
+#+ with the exception of the
+#+ wonderful 'not'. I might
+#+ try that 'whenadded'.
+[aliases]
+  cob = checkout -b
+  co = checkout
+  br = branch
+  ci = commit
+  st = status
+  aa = add --all
+  af = add --force
+  cm = commit -m
+  not = ls-files --others --ignored --exclude-from=.gitignore
+  whenadded = log --diff-filter=A --
+[core]
+  pager = less -R
+        autocrlf = true
+
+(base) C:\Users\bball>:: edit for compatibility; probably make them all with tab
+(base) C:\Users\bball>::+ (since some haven't been working)
+(base) C:\Users\bball>where notepad++
+INFO: Could not find files for the given pattern(s).
+
+(base) C:\Users\bball>C:\Program Files\Notepad++\notepad++.exe .gitconfig
+'C:\Program' is not recognized as an internal or external command,
+operable program or batch file.
+
+(base) C:\Users\bball>'C:\Program Files\Notepad++\notepad++.exe' .gitconfig
+The filename, directory name, or volume label syntax is incorrect.
+
+(base) C:\Users\bball>"C:\Program Files\Notepad++\notepad++.exe" .\.gitconfig
+
+(base) C:\Users\bball>type .\.gitconfig
+# This is Git's per-user configuration file
+# @file    .gitconfig
+# @author  David BLACK  @bballdave025
+# @since   2023-02-18
+[user]
+  name = David Black
+  email = bballdave025@yahoo.com
+[diff]
+  tool = vimdiff
+[merge]
+  tool = vimdiff
+# Aliases shared by Ben MURPHY.
+#+ I'll keep them here,
+#+ but I don't use them much,
+#+ with the exception of the
+#+ wonderful 'not'. I might
+#+ try that 'whenadded'.
+[aliases]
+  cob = checkout -b
+  co = checkout
+  br = branch
+  ci = commit
+  st = status
+  aa = add --all
+  af = add --force
+  cm = commit -m
+  not = ls-files --others --ignored --exclude-from=.gitignore
+  whenadded = log --diff-filter=A --
+[core]
+  pager = less -R
+        autocrlf = true
+
+(base) C:\Users\bball>::  Put in tabs by showing all characters (in Notepad++)
+(base) C:\Users\bball>::+ copying that last tab character, and pasting.
+(base) C:\Users\bball>type .\.gitconfig
+# This is Git's per-user configuration file
+# @file    .gitconfig
+# @author  David BLACK  @bballdave025
+# @since   2023-02-18
+[user]
+        name = David Black
+        email = bballdave025@yahoo.com
+[diff]
+        tool = vimdiff
+[merge]
+        tool = vimdiff
+# Aliases shared by Ben MURPHY.
+#+ I'll keep them here,
+#+ but I don't use them much,
+#+ with the exception of the
+#+ wonderful 'not'. I might
+#+ try that 'whenadded'.
+[aliases]
+        cob = checkout -b
+        co = checkout
+        br = branch
+        ci = commit
+        st = status
+        aa = add --all
+        af = add --force
+        cm = commit -m
+        not = ls-files --others --ignored --exclude-from=.gitignore
+        whenadded = log --diff-filter=A --
+[core]
+        pager = less -R
+        autocrlf = true
+
+(base) C:\Users\bball>

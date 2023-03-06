@@ -1,0 +1,321 @@
+
+(base) C:\Users\bball>conda info --envs
+# conda environments:
+#
+base                  *  C:\Users\bball\miniconda3
+cling                    C:\Users\bball\miniconda3\envs\cling
+encoding_langs           C:\Users\bball\miniconda3\envs\encoding_langs
+intro_deep_learning      C:\Users\bball\miniconda3\envs\intro_deep_learning
+visualization_plotting_practice     C:\Users\bball\miniconda3\envs\visualization_plotting_practice
+
+
+(base) C:\Users\bball>cd C:\David\my_repos_dwb\visualization_portfolio\higgs_boson
+
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>dir
+ Volume in drive C is Windows-SSD
+ Volume Serial Number is AE3F-8272
+
+ Directory of C:\David\my_repos_dwb\visualization_portfolio\higgs_boson
+
+03/05/2023  05:35 PM    <DIR>          .
+03/05/2023  05:35 PM    <DIR>          ..
+03/05/2023  05:35 PM                 0 .gitignore
+03/05/2023  05:29 PM                17 README.md
+               2 File(s)             17 bytes
+               2 Dir(s)  60,089,561,088 bytes free
+
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>date /t
+Sun 03/05/2023
+
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>time /t
+07:47 PM
+
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>echo %date%
+Sun 03/05/2023
+
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>echo %time%
+19:47:38.47
+
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>tzutil /g
+Mountain Standard Time
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>w32tm /tz
+Time zone: Current:TIME_ZONE_ID_STANDARD Bias: 420min (UTC=LocalTime+Bias)
+  [Standard Name:"Mountain Standard Time" Bias:0min Date:(M:11 D:1 DoW:0)]
+  [Daylight Name:"Mountain Daylight Time" Bias:-60min Date:(M:3 D:2 DoW:0)]
+
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>w32tm /tz | cmd /q /v:on /c "set/p .=&echo(!.!"
+Time zone: Current:TIME_ZONE_ID_STANDARD Bias: 420min (UTC=LocalTime+Bias)
+
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>:: strange way to extract first line, but whatever.
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>set "N_FIRST_LINES=2"
+
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>echo %N_FIRST_LINES%
+2
+
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>w32tm /tz | cmd /q /v:on /c "set/p .=&echo(!.!" > temp.txt && for /l %l in (1,1,%N_FIRST_LINES%) do @for /f "tokens=* delims=:" %a in ('findstr /n /r "^" temp.txt ^| findstr /r "^%l:"') do @echo %a
+1:Time zone: Current:TIME_ZONE_ID_STANDARD Bias: 420min (UTC=LocalTime+Bias)
+
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>echo %n_first_lines%
+2
+
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>:: Oops, I was only writing one line to temp.txt
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>w32tm /tz > temp.txt && for /l %l in (1,1,%N_FIRST_LINES%) do @for /f "tokens=1,* delims=:" %a in ('findstr /n /r "^" temp.txt ^| findstr /r "^%l:"') do @echo %b
+Time zone: Current:TIME_ZONE_ID_STANDARD Bias: 420min (UTC=LocalTime+Bias)
+  [Standard Name:"Mountain Standard Time" Bias:0min Date:(M:11 D:1 DoW:0)]
+
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>w32tm /tz > temp.txt && for /l %l in (1,1,%N_FIRST_LINES%) do @for /f "tokens=* delims=:" %a in ('findstr /n /r "^" temp.txt ^| findstr /r "^%l:"') do @echo %a
+1:Time zone: Current:TIME_ZONE_ID_STANDARD Bias: 420min (UTC=LocalTime+Bias)
+2:  [Standard Name:"Mountain Standard Time" Bias:0min Date:(M:11 D:1 DoW:0)]
+
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>w32tm /tz
+Time zone: Current:TIME_ZONE_ID_STANDARD Bias: 420min (UTC=LocalTime+Bias)
+  [Standard Name:"Mountain Standard Time" Bias:0min Date:(M:11 D:1 DoW:0)]
+  [Daylight Name:"Mountain Daylight Time" Bias:-60min Date:(M:3 D:2 DoW:0)]
+
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>::::::::::::::::::::::::::::::::::::::::1
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>::  SO, to do one line, I can do either
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>w32tm /tz | cmd /q /v:on /c "set/p .=&echo(!.!"
+Time zone: Current:TIME_ZONE_ID_STANDARD Bias: 420min (UTC=LocalTime+Bias)
+
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>::  OR
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>set "N_FIRST_LINES=1"
+
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>w32tm /tz > temp.txt && for /l %l in (1,1,%N_FIRST_LINES%) do @for /f "tokens=1,* delims=:" %a in ('findstr /n /r "^" temp.txt ^| findstr /r "^%l:"') do @echo %b
+Time zone: Current:TIME_ZONE_ID_STANDARD Bias: 420min (UTC=LocalTime+Bias)
+
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>:: try
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>::(w32tm /tz > temp.txt && for /l %l in (1,1,%N_FIRST_LINES%) do @for /f "tokens=1,* delims=:" %a in ('findstr /n /r "^" temp.txt ^| findstr /r "^%l:"') do @echo %b) && del /q temp.txt
+
+
+
+
+
+(base) C:\Users\bball>(w32tm /tz > temp.txt && for /l %l in (2,2,2) do @for /f "tokens=1,* delims=:" %a in ('findstr /n /r "^" temp.txt ^| findstr /r "^%l:"') do @echo %b) && del temp.txt
+  [Standard Name:"Mountain Standard Time" Bias:0min Date:(M:11 D:1 DoW:0)]
+
+(base) C:\Users\bball>(w32tm /tz > temp.txt && for /l %l in (3,3,3) do @for /f "tokens=1,* delims=:" %a in ('findstr /n /r "^" temp.txt ^| findstr /r "^%l:"') do @echo %b) && del temp.txt
+  [Daylight Name:"Mountain Daylight Time" Bias:-60min Date:(M:3 D:2 DoW:0)]
+
+
+
+
+
+(base) C:\Users\bball>
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>dir
+ Volume in drive C is Windows-SSD
+ Volume Serial Number is AE3F-8272
+
+ Directory of C:\David\my_repos_dwb\visualization_portfolio\higgs_boson
+
+03/05/2023  08:04 PM    <DIR>          .
+03/05/2023  08:04 PM    <DIR>          ..
+03/05/2023  05:35 PM                 0 .gitignore
+03/05/2023  05:29 PM                17 README.md
+03/05/2023  08:13 PM               229 temp.txt
+               3 File(s)            246 bytes
+               2 Dir(s)  60,077,219,840 bytes free
+
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>del /q temp.txt
+
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>:: try
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>(w32tm /tz > temp.txt && for /l %l in (1,1,%N_FIRST_LINES%) do @for /f "tokens=1,* delims=:" %a in ('findstr /n /r "^" temp.txt ^| findstr /r "^%l:"') do @echo %b) && del /q temp.txt
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>:: But for the first 2 lines, I need
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>set "N_FIRST_LINES=2"
+
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>w32tm /tz > temp.txt && for /l %l in (1,1,%N_FIRST_LINES%) do @for /f "tokens=1,* delims=:" %a in ('findstr /n /r "^" temp.txt ^| findstr /r "^%l:"') do @echo %b
+Time zone: Current:TIME_ZONE_ID_STANDARD Bias: 420min (UTC=LocalTime+Bias)
+  [Standard Name:"Mountain Standard Time" Bias:0min Date:(M:11 D:1 DoW:0)]
+
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>:: try
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>::(w32tm /tz > temp.txt && for /l %l in (1,1,%N_FIRST_LINES%) do @for /f "tokens=1,* delims=:" %a in ('findstr /n /r "^" temp.txt ^| findstr /r "^%l:"') do @echo %b) && del /q temp.txt
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>:: Quick try at lines 1 and 3.
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>w32tm /tz > temp.txt && for /l %l in (1,2,3) do @for /f "tokens=1,* delims=:" %a in ('findstr /n /r "^" temp.txt ^| findstr /r "^%l:"') do @echo %b
+Time zone: Current:TIME_ZONE_ID_STANDARD Bias: 420min (UTC=LocalTime+Bias)
+  [Daylight Name:"Mountain Daylight Time" Bias:-60min Date:(M:3 D:2 DoW:0)]
+
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>:: try
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>::(w32tm /tz > temp.txt && for /l %l in (1,2,3) do @for /f "tokens=1,* delims=:" %a in ('findstr /n /r "^" temp.txt ^| findstr /r "^%l:"') do @echo %b) && del /q temp.txt
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>:: Wow, it worked!
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>:: Anyway, for me ...
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>w32tm /tz | cmd /q /v:on /c "set/p .=&echo(!.!"
+Time zone: Current:TIME_ZONE_ID_STANDARD Bias: 420min (UTC=LocalTime+Bias)
+
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>:: Quick reminder:
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>:: https://en.wikipedia.org/wiki/Escape_character#Windows_Command_Prompt
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>for /f "usebackq tokens=*" %a in (`w32tm /tz ^| cmd /q /v:on /c "set/p .=&echo(!.!"`) do @if not defined TZ_INFO set TZ_INFO=%a
+
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>echo %TZ_INFO%
+Time zone: Current:TIME_ZONE_ID_STANDARD Bias: 420min (UTC=LocalTime+Bias)
+
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>for /f "usebackq tokens=*" %a in (`w32tm /tz ^| cmd /q /v:on /c "set/p .=&echo(!.!"`) do @if not defined TZ_INFO set TZ_INFO=%a && echo abcdefg
+
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>(for /f "usebackq tokens=*" %a in (`w32tm /tz ^| cmd /q /v:on /c "set/p .=&echo(!.!"`) do @if not defined TZ_INFO set TZ_INFO=%a) && echo abcdefg
+abcdefg
+
+(base) C:\David\my_repos_dwb\visualization_portfolio\higgs_boson>(for /f "usebackq tokens=*" %a in (`w32tm /tz ^| cmd /q /v:on /c "set/p .=&echo(!.!"`) do @if not defined TZ_INFO set TZ_INFO=%a) && echo off && for /f "tokens=*" %i in ('tzutil /g') do echo %date% %time% "%i" %TZ_INFO%
+Sun 03/05/2023 20:43:12.12 "Mountain Standard Time" Time zone: Current:TIME_ZONE_ID_STANDARD Bias: 420min (UTC=LocalTime+Bias)
+
+:: doesn't continue on (no next prompt). try
+(base) C:\Users\bball>(set TZ_INFO=) && (for /f "usebackq tokens=*" %a in (`w32tm /tz ^| cmd /q /v:on /c "set/p .=&echo(!.!"`) do @if not defined TZ_INFO set "TZ_INFO=%a") && (echo() && (for /f "tokens=*" %i in ('tzutil /g') do @echo "%date%" "%time%" "%i" "%TZ_INFO%")
+
+"Sun 03/05/2023" "21:01:52.43" "Mountain Standard Time" "Time zone: Current:TIME_ZONE_ID_STANDARD Bias: 420min (UTC=LocalTime+Bias)"
+
+(base) C:\Users\bball>(set TZ_INFO=) && (set LOCALE_INFO=) && (for /f "usebackq tokens=*" %a in (`w32tm /tz ^| cmd /q /v:on /c "set/p .=&echo(!.!"`) do @if not defined TZ_INFO set "TZ_INFO=%a") && (for /f "usebackq tokens=*" %k in (`systeminfo ^| findstr ";" ^| cmd /q /v:on /c "set/p .=&echo(!.!"`) do @if not defined LOCALE_INFO set "LOCALE_INFO=%k") && (echo() && (for /f "tokens=*" %n in ('tzutil /g') do @echo "%date%" "%time%" "%n" "%TZ_INFO%" "%LOCALE_INFO%")
+
+"Sun 03/05/2023" "22:52:39.22" "Mountain Standard Time" "Time zone: Current:TIME_ZONE_ID_STANDARD Bias: 420min (UTC=LocalTime+Bias)" "System Locale:             en-us;English (United States)"
+
+(base) C:\Users\bball>
+
+
+(set TZ_INFO_1=) && (set TZ_INFO_2=) && (set TZ_INFO_3=) && (set LOCALE_INFO=) && (for /f "usebackq tokens=*" %a in (`w32tm /tz ^| cmd /q /v:on /c "set/p .=&echo(!.!"`) do @if not defined TZ_INFO_1 set "TZ_INFO_1=%a") && (for /f "usebackq tokens=*" %e in (`w32tm /tz > temp.txt && for /l %l in (3,3,3) do @for /f "tokens=1,* delims=:" %a in ('findstr /n /r "^" temp.txt ^| findstr /r "^%l:"') do @echo %b`) do @if not defined TZ_INFO_2 set "TZ_INFO_2=%e") && (del temp.txt) && (for /f "usebackq tokens=*" %k in (`systeminfo ^| findstr ";" ^| cmd /q /v:on /c "set/p .=&echo(!.!"`) do @if not defined LOCALE_INFO set "LOCALE_INFO=%k") && (echo() && (for /f "tokens=*" %n in ('tzutil /g') do @echo "%date%" "%time%" "%n" "%TZ_INFO%" "%LOCALE_INFO%")
+
+
+
+
+(base) C:\Users\bball>(set TZ_INFO=) && (set LOCALE_INFO=) && (for /f "usebackq tokens=*" %a in (`w32tm /tz ^| cmd /q /v:on /c "set/p .=&echo(!.!"`) do @if not defined TZ_INFO set "TZ_INFO=%a") && (echo( > nul) && (for /f "usebackq tokens=*" %k in (`systeminfo ^| findstr ";" ^| cmd /q /v:on /c "set/p .=&echo(!.!"`) do @if not defined LOCALE_INFO set "LOCALE_INFO=%k") && (echo() && (for /f "tokens=*" %i in ('tzutil /g') do @echo "%date%" "%time%" "%i" "%TZ_INFO%" "%LOCALE_INFO%") && (echo() && (w32tm /tz)
+
+"Sun 03/05/2023" "23:19:40.52" "Mountain Standard Time" "Time zone: Current:TIME_ZONE_ID_STANDARD Bias: 420min (UTC=LocalTime+Bias)" "System Locale:             en-us;English (United States)"
+
+Time zone: Current:TIME_ZONE_ID_STANDARD Bias: 420min (UTC=LocalTime+Bias)
+  [Standard Name:"Mountain Standard Time" Bias:0min Date:(M:11 D:1 DoW:0)]
+  [Daylight Name:"Mountain Daylight Time" Bias:-60min Date:(M:3 D:2 DoW:0)]
+
+(base) C:\Users\bball>
+
+:::::::BEST:::::::
+
+(base) C:\Users\bball>(set LOCALE_INFO=) && (echo( > nul) && (for /f "usebackq tokens=*" %k in (`systeminfo ^| findstr ";" ^| cmd /q /v:on /c "set/p .=&echo(!.!"`) do @if not defined LOCALE_INFO set "LOCALE_INFO=%k") && (echo() && (for /f "tokens=*" %i in ('tzutil /g') do @echo "%date%" "%time%" "%i" "%LOCALE_INFO%") && (echo() && (w32tm /tz)
+
+"Sun 03/05/2023" "23:21:21.07" "Mountain Standard Time" "System Locale:             en-us;English (United States)"
+
+Time zone: Current:TIME_ZONE_ID_STANDARD Bias: 420min (UTC=LocalTime+Bias)
+  [Standard Name:"Mountain Standard Time" Bias:0min Date:(M:11 D:1 DoW:0)]
+  [Daylight Name:"Mountain Daylight Time" Bias:-60min Date:(M:3 D:2 DoW:0)]
+
+(base) C:\Users\bball>
+(base) C:\Users\bball>powershell -c (Get-Date -UFormat "%s_%Y%m%dT%H%M%S%Z00") -replace '[.][0-9]{5}_', '_'
+1678060275_20230305T235115-0700
+
+
+
+:: https://serverfault.com/questions/469053/how-to-extract-command-line-output-into-a-variable
+:: https://serverfault.com/questions/490841/how-to-display-the-first-n-lines-of-a-command-output-in-windows-the-equivalent
+:: https://superuser.com/a/815988/908741  :: answer on https://superuser.com/questions/815977/writing-only-first-line-of-the-command-output-in-windows-cmd-to-a-file
+:: https://en.wikipedia.org/wiki/Escape_character#Windows_Command_Prompt
+:: https://ss64.com/nt/syntax-brackets.html
+:: 
+:: https://stackoverflow.com/a/30270029/6505499  :: https://stackoverflow.com/questions/30269913/running-multiple-commands-in-a-single-line-of-for-f
+:: https://stackoverflow.com/questions/43432492/save-multiple-tokens-from-a-command-output-using-for-f
+:: https://renenyffenegger.ch/notes/Windows/dirs/Windows/System32/cmd_exe/commands/for/f/tokens
+:: https://ss64.com/nt/for_f.html
+:: #good# https://superuser.com/questions/1302362/how-to-display-current-windows-os-date-time-and-timezone-in-cli
+:: https://superuser.com/questions/1460526/get-timezone-from-windows-command-line
+:: https://woshub.com/how-to-set-timezone-from-command-prompt-in-windows/
+:: 
+:: https://stackoverflow.com/a/19799236/6505499 :: best?
+:: https://stackoverflow.com/a/4584577/6505499
+:: 
+:: https://serverfault.com/a/888387/472971
+
+
+
+
+
+:: FORGET BELOW, MOSTLY ::
+
+
+(base) C:\Users\bball>echo %TZ_INFO%
+%TZ_INFO%
+
+(base) C:\Users\bball>for /f "tokens=*" %i in ('tzutil /g') do echo "%date%" "%time%" "%i"
+
+(base) C:\Users\bball>echo "Sun 03/05/2023" "20:50:49.00" "Mountain Standard Time"
+"Sun 03/05/2023" "20:50:49.00" "Mountain Standard Time"
+
+(base) C:\Users\bball>(for /f "usebackq tokens=*" %a in (`w32tm /tz ^| cmd /q /v:on /c "set/p .=&echo(!.!"`) do @if not defined TZ_INFO set TZ_INFO=%a) && (for /f "tokens=*" %i in ('tzutil /g') do @echo "%date%" "%time%" "%i" "%TZ_INFO%")
+"Sun 03/05/2023" "20:51:40.25" "Mountain Standard Time" "%TZ_INFO%"
+
+(base) C:\Users\bball>for /f "usebackq tokens=*" %a in (`w32tm /tz ^| cmd /q /v:on /c "set/p .=&echo(!.!"`) do @if not defined TZ_INFO set TZ_INFO=%a
+
+(base) C:\Users\bball>echo %TZ_INFO%
+Time zone: Current:TIME_ZONE_ID_STANDARD Bias: 420min (UTC=LocalTime+Bias)
+
+(base) C:\Users\bball>(for /f "usebackq tokens=*" %a in (`w32tm /tz ^| cmd /q /v:on /c "set/p .=&echo(!.!"`) do @if not defined TZ_INFO set TZ_INFO=%a) && (for /f "tokens=*" %i in ('tzutil /g') do @echo "%date%" "%time%" "%i" "%TZ_INFO%")
+"Sun 03/05/2023" "20:52:50.39" "Mountain Standard Time" "Time zone: Current:TIME_ZONE_ID_STANDARD Bias: 420min (UTC=LocalTime+Bias)"
+
+(base) C:\Users\bball>set "TZ_INFO=''"
+
+(base) C:\Users\bball>echo %TZ_INFO%
+''
+
+(base) C:\Users\bball>set "TZ_INFO="
+
+(base) C:\Users\bball>echo %TZ_INFO%
+%TZ_INFO%
+
+(base) C:\Users\bball>(set TZ_INFO=) && (for /f "usebackq tokens=*" %a in (`w32tm /tz ^| cmd /q /v:on /c "set/p .=&echo(!.!"`) do @if not defined TZ_INFO set "TZ_INFO=%a") && (for /f "tokens=*" %i in ('tzutil /g') do @echo "%date%" "%time%" "%i" "%TZ_INFO%")
+"Sun 03/05/2023" "20:57:44.86" "Mountain Standard Time" "%TZ_INFO%"
+
+(base) C:\Users\bball>(set TZ_INFO=) && (for /f "usebackq tokens=*" %a in (`w32tm /tz ^| cmd /q /v:on /c "set/p .=&echo(!.!"`) do @if not defined TZ_INFO set "TZ_INFO=%a") && (for /f "tokens=*" %i in ('tzutil /g') do @echo "%date%" "%time%" "%i" "%TZ_INFO%")
+"Sun 03/05/2023" "20:57:51.48" "Mountain Standard Time" "Time zone: Current:TIME_ZONE_ID_STANDARD Bias: 420min (UTC=LocalTime+Bias)"
+
+(base) C:\Users\bball>(set TZ_INFO=) && (for /f "usebackq tokens=*" %a in (`w32tm /tz ^| cmd /q /v:on /c "set/p .=&echo(!.!"`) do @if not defined TZ_INFO set "TZ_INFO=%a") && (for /f "tokens=*" %i in ('tzutil /g') do @echo "%date%" "%time%" "%i" "%TZ_INFO%" > nul) && (for /f "tokens=*" %i in ('tzutil /g') do @echo "%date%" "%time%" "%i" "%TZ_INFO%")
+"Sun 03/05/2023" "20:59:00.80" "Mountain Standard Time" "Time zone: Current:TIME_ZONE_ID_STANDARD Bias: 420min (UTC=LocalTime+Bias)"
+
+(base) C:\Users\bball>
+(base) C:\Users\bball>
+(base) C:\Users\bball>
+(base) C:\Users\bball>(set TZ_INFO=) && (for /f "usebackq tokens=*" %a in (`w32tm /tz ^| cmd /q /v:on /c "set/p .=&echo(!.!"`) do @if not defined TZ_INFO set "TZ_INFO=%a") && (for /f "tokens=*" %i in ('tzutil /g') do @echo "%date%" "%time%" "%i" "%TZ_INFO%" > nul) && (for /f "tokens=*" %i in ('tzutil /g') do @echo "%date%" "%time%" "%i" "%TZ_INFO%")
+"Sun 03/05/2023" "20:59:16.39" "Mountain Standard Time" "Time zone: Current:TIME_ZONE_ID_STANDARD Bias: 420min (UTC=LocalTime+Bias)"
+
+(base) C:\Users\bball>(set TZ_INFO=) && (for /f "usebackq tokens=*" %a in (`w32tm /tz ^| cmd /q /v:on /c "set/p .=&echo(!.!"`) do @if not defined TZ_INFO set "TZ_INFO=%a") && (echo > nul) && (for /f "tokens=*" %i in ('tzutil /g') do @echo "%date%" "%time%" "%i" "%TZ_INFO%")
+"Sun 03/05/2023" "21:01:10.14" "Mountain Standard Time" "Time zone: Current:TIME_ZONE_ID_STANDARD Bias: 420min (UTC=LocalTime+Bias)"
+
+(base) C:\Users\bball>echo \n
+\n
+
+(base) C:\Users\bball>echo(
+
+
+(base) C:\Users\bball>(set TZ_INFO=) && (for /f "usebackq tokens=*" %a in (`w32tm /tz ^| cmd /q /v:on /c "set/p .=&echo(!.!"`) do @if not defined TZ_INFO set "TZ_INFO=%a") && (echo() && (for /f "tokens=*" %i in ('tzutil /g') do @echo "%date%" "%time%" "%i" "%TZ_INFO%")
+
+"Sun 03/05/2023" "21:01:52.43" "Mountain Standard Time" "Time zone: Current:TIME_ZONE_ID_STANDARD Bias: 420min (UTC=LocalTime+Bias)"
+
+(base) C:\Users\bball>systeminfo | findstr  /C:"Time Zone"
+Time Zone:                 (UTC-07:00) Mountain Time (US & Canada)
+
+(base) C:\Users\bball>systeminfo | findstr  /C:"Date"
+Original Install Date:     6/4/2021, 11:43:22 AM
+
+(base) C:\Users\bball>systeminfo | findstr  /C:"Time"
+System Boot Time:          2/16/2023, 2:42:25 PM
+Time Zone:                 (UTC-07:00) Mountain Time (US & Canada)
+
+(base) C:\Users\bball>powershell -command "get-date -uformat ‘%Z'"
+-07
+
+(base) C:\Users\bball>get-date
+'get-date' is not recognized as an internal or external command,
+operable program or batch file.
+
+(base) C:\Users\bball>
+
+
