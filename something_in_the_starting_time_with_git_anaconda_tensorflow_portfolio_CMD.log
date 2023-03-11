@@ -1,0 +1,567 @@
+
+(base) C:\Users\bball>mkdir quick_test_prep
+
+(base) C:\Users\bball>cd quick_test_prep
+
+(base) C:\Users\bball\quick_test_prep>cd ..
+
+(base) C:\Users\bball>git clone git@github.com:bballdave025/quick_test_prep.git
+Cloning into 'quick_test_prep'...
+ssh: connect to host github.com port 22: Connection timed out
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+(base) C:\Users\bball>cd C:\David
+
+(base) C:\David>dir
+ Volume in drive C is Windows-SSD
+ Volume Serial Number is AE3F-8272
+
+ Directory of C:\David
+
+02/18/2023  12:16 PM    <DIR>          .
+02/18/2023  12:16 PM    <DIR>          ..
+08/27/2021  06:40 PM             1,628 Borkovskikh - Shortcut.lnk
+11/17/2022  01:54 PM    <DIR>          Contacts_backup_and_restore
+11/17/2022  01:55 PM    <DIR>          Contacts_CSV
+11/17/2022  01:56 PM    <DIR>          Contact_bak
+08/27/2021  06:40 PM             1,618 Filipovich - Shortcut.lnk
+02/18/2023  04:41 PM    <DIR>          my_repos_dwb
+11/16/2022  06:41 PM    <DIR>          SMS_bak
+               2 File(s)          3,246 bytes
+               7 Dir(s)   7,937,429,504 bytes free
+
+(base) C:\David>cd my_repos_dwb
+
+(base) C:\David\my_repos_dwb>dir
+ Volume in drive C is Windows-SSD
+ Volume Serial Number is AE3F-8272
+
+ Directory of C:\David\my_repos_dwb
+
+02/18/2023  04:41 PM    <DIR>          .
+02/18/2023  04:41 PM    <DIR>          ..
+02/18/2023  04:41 PM    <DIR>          courses_tutorials_etc
+               0 File(s)              0 bytes
+               3 Dir(s)   7,937,429,504 bytes free
+
+(base) C:\David\my_repos_dwb>git clone git@github.com:bballdave025/quick_test_prep.git
+Cloning into 'quick_test_prep'...
+ssh: connect to host github.com port 22: Connection timed out
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+(base) C:\David\my_repos_dwb>git clone git@github.com:bballdave025/quick_test_prep.git
+Cloning into 'quick_test_prep'...
+Warning: Permanently added the ECDSA host key for IP address '140.82.112.3' to the list of known hosts.
+Enter passphrase for key '/c/Users/bball/.ssh/id_rsa':
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (5/5), 13.49 KiB | 2.25 MiB/s, done.
+
+(base) C:\David\my_repos_dwb>cd quick_test_prep
+
+(base) C:\David\my_repos_dwb\quick_test_prep>dir
+ Volume in drive C is Windows-SSD
+ Volume Serial Number is AE3F-8272
+
+ Directory of C:\David\my_repos_dwb\quick_test_prep
+
+02/24/2023  05:04 PM    <DIR>          .
+02/24/2023  05:04 PM    <DIR>          ..
+02/24/2023  05:04 PM             1,928 .gitignore
+02/24/2023  05:04 PM            35,823 LICENSE
+02/24/2023  05:04 PM                60 README.md
+               3 File(s)         37,811 bytes
+               2 Dir(s)  19,188,514,816 bytes free
+
+(base) C:\David\my_repos_dwb\quick_test_prep>conda create --name visualization_plotting_practice python=3.10
+Retrieving notices: ...working... done
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: C:\Users\bball\miniconda3\envs\visualization_plotting_practice
+
+  added / updated specs:
+    - python=3.10
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    certifi-2022.12.7          |  py310haa95532_0         149 KB
+    pip-22.3.1                 |  py310haa95532_0         2.8 MB
+    python-3.10.9              |       h966fe2a_0        15.8 MB
+    setuptools-65.6.3          |  py310haa95532_0         1.2 MB
+    wheel-0.38.4               |  py310haa95532_0          83 KB
+    wincertstore-0.2           |  py310haa95532_2          15 KB
+    ------------------------------------------------------------
+                                           Total:        20.0 MB
+
+The following NEW packages will be INSTALLED:
+
+  bzip2              pkgs/main/win-64::bzip2-1.0.8-he774522_0
+  ca-certificates    pkgs/main/win-64::ca-certificates-2023.01.10-haa95532_0
+  certifi            pkgs/main/win-64::certifi-2022.12.7-py310haa95532_0
+  libffi             pkgs/main/win-64::libffi-3.4.2-hd77b12b_6
+  openssl            pkgs/main/win-64::openssl-1.1.1t-h2bbff1b_0
+  pip                pkgs/main/win-64::pip-22.3.1-py310haa95532_0
+  python             pkgs/main/win-64::python-3.10.9-h966fe2a_0
+  setuptools         pkgs/main/win-64::setuptools-65.6.3-py310haa95532_0
+  sqlite             pkgs/main/win-64::sqlite-3.40.1-h2bbff1b_0
+  tk                 pkgs/main/win-64::tk-8.6.12-h2bbff1b_0
+  tzdata             pkgs/main/noarch::tzdata-2022g-h04d1e81_0
+  vc                 pkgs/main/win-64::vc-14.2-h21ff451_1
+  vs2015_runtime     pkgs/main/win-64::vs2015_runtime-14.27.29016-h5e58377_2
+  wheel              pkgs/main/win-64::wheel-0.38.4-py310haa95532_0
+  wincertstore       pkgs/main/win-64::wincertstore-0.2-py310haa95532_2
+  xz                 pkgs/main/win-64::xz-5.2.10-h8cc25b3_1
+  zlib               pkgs/main/win-64::zlib-1.2.13-h8cc25b3_0
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate visualization_plotting_practice
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+
+(base) C:\David\my_repos_dwb\quick_test_prep>conda activate visualization_plotting_practice
+
+(visualization_plotting_practice) C:\David\my_repos_dwb\quick_test_prep>python -m pip install --upgrade pip
+Requirement already satisfied: pip in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (22.3.1)
+Collecting pip
+  Using cached pip-23.0.1-py3-none-any.whl (2.1 MB)
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 22.3.1
+    Uninstalling pip-22.3.1:
+      Successfully uninstalled pip-22.3.1
+Successfully installed pip-23.0.1
+
+(visualization_plotting_practice) C:\David\my_repos_dwb\quick_test_prep>python -m pip install jupyter
+Collecting jupyter
+  Using cached jupyter-1.0.0-py2.py3-none-any.whl (2.7 kB)
+Collecting ipykernel
+  Using cached ipykernel-6.21.2-py3-none-any.whl (149 kB)
+Collecting ipywidgets
+  Using cached ipywidgets-8.0.4-py3-none-any.whl (137 kB)
+Collecting qtconsole
+  Using cached qtconsole-5.4.0-py3-none-any.whl (121 kB)
+Collecting notebook
+  Using cached notebook-6.5.2-py3-none-any.whl (439 kB)
+Collecting nbconvert
+  Using cached nbconvert-7.2.9-py3-none-any.whl (274 kB)
+Collecting jupyter-console
+  Downloading jupyter_console-6.6.1-py3-none-any.whl (24 kB)
+Collecting nest-asyncio
+  Using cached nest_asyncio-1.5.6-py3-none-any.whl (5.2 kB)
+Collecting psutil
+  Using cached psutil-5.9.4-cp36-abi3-win_amd64.whl (252 kB)
+Collecting jupyter-core!=5.0.*,>=4.12
+  Using cached jupyter_core-5.2.0-py3-none-any.whl (94 kB)
+Collecting pyzmq>=20
+  Downloading pyzmq-25.0.0-cp310-cp310-win_amd64.whl (969 kB)
+     ---------------------------------------- 969.4/969.4 kB 5.1 MB/s eta 0:00:00
+Collecting matplotlib-inline>=0.1
+  Using cached matplotlib_inline-0.1.6-py3-none-any.whl (9.4 kB)
+Collecting debugpy>=1.6.5
+  Downloading debugpy-1.6.6-cp310-cp310-win_amd64.whl (4.8 MB)
+     ---------------------------------------- 4.8/4.8 MB 11.9 MB/s eta 0:00:00
+Collecting traitlets>=5.4.0
+  Using cached traitlets-5.9.0-py3-none-any.whl (117 kB)
+Collecting ipython>=7.23.1
+  Using cached ipython-8.10.0-py3-none-any.whl (784 kB)
+Collecting packaging
+  Using cached packaging-23.0-py3-none-any.whl (42 kB)
+Collecting jupyter-client>=6.1.12
+  Using cached jupyter_client-8.0.3-py3-none-any.whl (102 kB)
+Collecting comm>=0.1.1
+  Using cached comm-0.1.2-py3-none-any.whl (6.5 kB)
+Collecting tornado>=6.1
+  Using cached tornado-6.2-cp37-abi3-win_amd64.whl (425 kB)
+Collecting widgetsnbextension~=4.0
+  Using cached widgetsnbextension-4.0.5-py3-none-any.whl (2.0 MB)
+Collecting jupyterlab-widgets~=3.0
+  Using cached jupyterlab_widgets-3.0.5-py3-none-any.whl (384 kB)
+Collecting pygments
+  Using cached Pygments-2.14.0-py3-none-any.whl (1.1 MB)
+Collecting prompt-toolkit>=3.0.30
+  Downloading prompt_toolkit-3.0.37-py3-none-any.whl (385 kB)
+     ---------------------------------------- 385.2/385.2 kB 23.4 MB/s eta 0:00:00
+Collecting nbclient>=0.5.0
+  Using cached nbclient-0.7.2-py3-none-any.whl (71 kB)
+Collecting jinja2>=3.0
+  Using cached Jinja2-3.1.2-py3-none-any.whl (133 kB)
+Collecting jupyterlab-pygments
+  Using cached jupyterlab_pygments-0.2.2-py2.py3-none-any.whl (21 kB)
+Collecting pandocfilters>=1.4.1
+  Using cached pandocfilters-1.5.0-py2.py3-none-any.whl (8.7 kB)
+Collecting tinycss2
+  Using cached tinycss2-1.2.1-py3-none-any.whl (21 kB)
+Collecting defusedxml
+  Using cached defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+Collecting bleach
+  Using cached bleach-6.0.0-py3-none-any.whl (162 kB)
+Collecting markupsafe>=2.0
+  Downloading MarkupSafe-2.1.2-cp310-cp310-win_amd64.whl (16 kB)
+Collecting nbformat>=5.1
+  Using cached nbformat-5.7.3-py3-none-any.whl (78 kB)
+Collecting beautifulsoup4
+  Using cached beautifulsoup4-4.11.2-py3-none-any.whl (129 kB)
+Collecting mistune<3,>=2.0.3
+  Using cached mistune-2.0.5-py2.py3-none-any.whl (24 kB)
+Collecting nbclassic>=0.4.7
+  Using cached nbclassic-0.5.2-py3-none-any.whl (10.0 MB)
+Collecting terminado>=0.8.3
+  Using cached terminado-0.17.1-py3-none-any.whl (17 kB)
+Collecting prometheus-client
+  Using cached prometheus_client-0.16.0-py3-none-any.whl (122 kB)
+Collecting ipython-genutils
+  Using cached ipython_genutils-0.2.0-py2.py3-none-any.whl (26 kB)
+Collecting Send2Trash>=1.8.0
+  Using cached Send2Trash-1.8.0-py3-none-any.whl (18 kB)
+Collecting argon2-cffi
+  Using cached argon2_cffi-21.3.0-py3-none-any.whl (14 kB)
+Collecting qtpy>=2.0.1
+  Using cached QtPy-2.3.0-py3-none-any.whl (83 kB)
+Collecting pickleshare
+  Using cached pickleshare-0.7.5-py2.py3-none-any.whl (6.9 kB)
+Collecting stack-data
+  Using cached stack_data-0.6.2-py3-none-any.whl (24 kB)
+Collecting colorama
+  Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Collecting decorator
+  Using cached decorator-5.1.1-py3-none-any.whl (9.1 kB)
+Collecting jedi>=0.16
+  Using cached jedi-0.18.2-py2.py3-none-any.whl (1.6 MB)
+Collecting backcall
+  Using cached backcall-0.2.0-py2.py3-none-any.whl (11 kB)
+Collecting python-dateutil>=2.8.2
+  Using cached python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+Collecting platformdirs>=2.5
+  Using cached platformdirs-3.0.0-py3-none-any.whl (14 kB)
+Collecting pywin32>=1.0
+  Downloading pywin32-305-cp310-cp310-win_amd64.whl (12.1 MB)
+     ---------------------------------------- 12.1/12.1 MB 10.4 MB/s eta 0:00:00
+Collecting notebook-shim>=0.1.0
+  Using cached notebook_shim-0.2.2-py3-none-any.whl (13 kB)
+Collecting jupyter-server>=1.8
+  Using cached jupyter_server-2.3.0-py3-none-any.whl (365 kB)
+Collecting fastjsonschema
+  Using cached fastjsonschema-2.16.2-py3-none-any.whl (22 kB)
+Collecting jsonschema>=2.6
+  Using cached jsonschema-4.17.3-py3-none-any.whl (90 kB)
+Collecting wcwidth
+  Using cached wcwidth-0.2.6-py2.py3-none-any.whl (29 kB)
+Collecting pywinpty>=1.1.0
+  Downloading pywinpty-2.0.10-cp310-none-win_amd64.whl (1.4 MB)
+     ---------------------------------------- 1.4/1.4 MB 12.8 MB/s eta 0:00:00
+Collecting argon2-cffi-bindings
+  Using cached argon2_cffi_bindings-21.2.0-cp36-abi3-win_amd64.whl (30 kB)
+Collecting soupsieve>1.2
+  Using cached soupsieve-2.4-py3-none-any.whl (37 kB)
+Collecting six>=1.9.0
+  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting webencodings
+  Using cached webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+Collecting parso<0.9.0,>=0.8.0
+  Using cached parso-0.8.3-py2.py3-none-any.whl (100 kB)
+Collecting pyrsistent!=0.17.0,!=0.17.1,!=0.17.2,>=0.14.0
+  Downloading pyrsistent-0.19.3-cp310-cp310-win_amd64.whl (62 kB)
+     ---------------------------------------- 62.7/62.7 kB 3.3 MB/s eta 0:00:00
+Collecting attrs>=17.4.0
+  Using cached attrs-22.2.0-py3-none-any.whl (60 kB)
+Collecting jupyter-server-terminals
+  Using cached jupyter_server_terminals-0.4.4-py3-none-any.whl (13 kB)
+Collecting websocket-client
+  Using cached websocket_client-1.5.1-py3-none-any.whl (55 kB)
+Collecting anyio>=3.1.0
+  Using cached anyio-3.6.2-py3-none-any.whl (80 kB)
+Collecting jupyter-events>=0.4.0
+  Using cached jupyter_events-0.6.3-py3-none-any.whl (18 kB)
+Collecting cffi>=1.0.1
+  Downloading cffi-1.15.1-cp310-cp310-win_amd64.whl (179 kB)
+     ---------------------------------------- 179.1/179.1 kB ? eta 0:00:00
+Collecting asttokens>=2.1.0
+  Using cached asttokens-2.2.1-py2.py3-none-any.whl (26 kB)
+Collecting pure-eval
+  Using cached pure_eval-0.2.2-py3-none-any.whl (11 kB)
+Collecting executing>=1.2.0
+  Using cached executing-1.2.0-py2.py3-none-any.whl (24 kB)
+Collecting idna>=2.8
+  Using cached idna-3.4-py3-none-any.whl (61 kB)
+Collecting sniffio>=1.1
+  Using cached sniffio-1.3.0-py3-none-any.whl (10 kB)
+Collecting pycparser
+  Using cached pycparser-2.21-py2.py3-none-any.whl (118 kB)
+Collecting pyyaml>=5.3
+  Downloading PyYAML-6.0-cp310-cp310-win_amd64.whl (151 kB)
+     ---------------------------------------- 151.7/151.7 kB ? eta 0:00:00
+Collecting python-json-logger>=2.0.4
+  Downloading python_json_logger-2.0.7-py3-none-any.whl (8.1 kB)
+Collecting rfc3339-validator
+  Using cached rfc3339_validator-0.1.4-py2.py3-none-any.whl (3.5 kB)
+Collecting rfc3986-validator>=0.1.1
+  Using cached rfc3986_validator-0.1.1-py2.py3-none-any.whl (4.2 kB)
+Collecting webcolors>=1.11
+  Using cached webcolors-1.12-py3-none-any.whl (9.9 kB)
+Collecting fqdn
+  Using cached fqdn-1.5.1-py3-none-any.whl (9.1 kB)
+Collecting jsonpointer>1.13
+  Using cached jsonpointer-2.3-py2.py3-none-any.whl (7.8 kB)
+Collecting isoduration
+  Using cached isoduration-20.11.0-py3-none-any.whl (11 kB)
+Collecting uri-template
+  Using cached uri_template-1.2.0-py3-none-any.whl (10 kB)
+Collecting arrow>=0.15.0
+  Using cached arrow-1.2.3-py3-none-any.whl (66 kB)
+Installing collected packages: webencodings, wcwidth, Send2Trash, pywin32, pure-eval, pickleshare, mistune, ipython-genutils, fastjsonschema, executing, backcall, widgetsnbextension, websocket-client, webcolors, uri-template, traitlets, tornado, tinycss2, soupsieve, sniffio, six, rfc3986-validator, pyzmq, pyyaml, pywinpty, python-json-logger, pyrsistent, pygments, pycparser, psutil, prompt-toolkit, prometheus-client, platformdirs, parso, pandocfilters, packaging, nest-asyncio, markupsafe, jupyterlab-widgets, jupyterlab-pygments, jsonpointer, idna, fqdn, defusedxml, decorator, debugpy, colorama, attrs, terminado, rfc3339-validator, qtpy, python-dateutil, matplotlib-inline, jupyter-core, jsonschema, jinja2, jedi, comm, cffi, bleach, beautifulsoup4, asttokens, anyio, stack-data, nbformat, jupyter-server-terminals, jupyter-client, arrow, argon2-cffi-bindings, nbclient, isoduration, ipython, argon2-cffi, nbconvert, ipykernel, qtconsole, jupyter-events, jupyter-console, ipywidgets, jupyter-server, notebook-shim, nbclassic, notebook, jupyter
+Successfully installed Send2Trash-1.8.0 anyio-3.6.2 argon2-cffi-21.3.0 argon2-cffi-bindings-21.2.0 arrow-1.2.3 asttokens-2.2.1 attrs-22.2.0 backcall-0.2.0 beautifulsoup4-4.11.2 bleach-6.0.0 cffi-1.15.1 colorama-0.4.6 comm-0.1.2 debugpy-1.6.6 decorator-5.1.1 defusedxml-0.7.1 executing-1.2.0 fastjsonschema-2.16.2 fqdn-1.5.1 idna-3.4 ipykernel-6.21.2 ipython-8.10.0 ipython-genutils-0.2.0 ipywidgets-8.0.4 isoduration-20.11.0 jedi-0.18.2 jinja2-3.1.2 jsonpointer-2.3 jsonschema-4.17.3 jupyter-1.0.0 jupyter-client-8.0.3 jupyter-console-6.6.1 jupyter-core-5.2.0 jupyter-events-0.6.3 jupyter-server-2.3.0 jupyter-server-terminals-0.4.4 jupyterlab-pygments-0.2.2 jupyterlab-widgets-3.0.5 markupsafe-2.1.2 matplotlib-inline-0.1.6 mistune-2.0.5 nbclassic-0.5.2 nbclient-0.7.2 nbconvert-7.2.9 nbformat-5.7.3 nest-asyncio-1.5.6 notebook-6.5.2 notebook-shim-0.2.2 packaging-23.0 pandocfilters-1.5.0 parso-0.8.3 pickleshare-0.7.5 platformdirs-3.0.0 prometheus-client-0.16.0 prompt-toolkit-3.0.37 psutil-5.9.4 pure-eval-0.2.2 pycparser-2.21 pygments-2.14.0 pyrsistent-0.19.3 python-dateutil-2.8.2 python-json-logger-2.0.7 pywin32-305 pywinpty-2.0.10 pyyaml-6.0 pyzmq-25.0.0 qtconsole-5.4.0 qtpy-2.3.0 rfc3339-validator-0.1.4 rfc3986-validator-0.1.1 six-1.16.0 sniffio-1.3.0 soupsieve-2.4 stack-data-0.6.2 terminado-0.17.1 tinycss2-1.2.1 tornado-6.2 traitlets-5.9.0 uri-template-1.2.0 wcwidth-0.2.6 webcolors-1.12 webencodings-0.5.1 websocket-client-1.5.1 widgetsnbextension-4.0.5
+
+(visualization_plotting_practice) C:\David\my_repos_dwb\quick_test_prep>python -m pip install jupyter
+Requirement already satisfied: jupyter in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (1.0.0)
+Requirement already satisfied: jupyter-console in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jupyter) (6.6.1)
+Requirement already satisfied: ipywidgets in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jupyter) (8.0.4)
+Requirement already satisfied: ipykernel in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jupyter) (6.21.2)
+Requirement already satisfied: nbconvert in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jupyter) (7.2.9)
+Requirement already satisfied: notebook in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jupyter) (6.5.2)
+Requirement already satisfied: qtconsole in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jupyter) (5.4.0)
+Requirement already satisfied: traitlets>=5.4.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from ipykernel->jupyter) (5.9.0)
+Requirement already satisfied: packaging in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from ipykernel->jupyter) (23.0)
+Requirement already satisfied: pyzmq>=20 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from ipykernel->jupyter) (25.0.0)
+Requirement already satisfied: psutil in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from ipykernel->jupyter) (5.9.4)
+Requirement already satisfied: debugpy>=1.6.5 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from ipykernel->jupyter) (1.6.6)
+Requirement already satisfied: tornado>=6.1 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from ipykernel->jupyter) (6.2)
+Requirement already satisfied: ipython>=7.23.1 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from ipykernel->jupyter) (8.10.0)
+Requirement already satisfied: jupyter-client>=6.1.12 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from ipykernel->jupyter) (8.0.3)
+Requirement already satisfied: matplotlib-inline>=0.1 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from ipykernel->jupyter) (0.1.6)
+Requirement already satisfied: nest-asyncio in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from ipykernel->jupyter) (1.5.6)
+Requirement already satisfied: comm>=0.1.1 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from ipykernel->jupyter) (0.1.2)
+Requirement already satisfied: jupyter-core!=5.0.*,>=4.12 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from ipykernel->jupyter) (5.2.0)
+Requirement already satisfied: widgetsnbextension~=4.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from ipywidgets->jupyter) (4.0.5)
+Requirement already satisfied: jupyterlab-widgets~=3.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from ipywidgets->jupyter) (3.0.5)
+Requirement already satisfied: prompt-toolkit>=3.0.30 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jupyter-console->jupyter) (3.0.37)
+Requirement already satisfied: pygments in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jupyter-console->jupyter) (2.14.0)
+Requirement already satisfied: bleach in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbconvert->jupyter) (6.0.0)
+Requirement already satisfied: pandocfilters>=1.4.1 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbconvert->jupyter) (1.5.0)
+Requirement already satisfied: nbformat>=5.1 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbconvert->jupyter) (5.7.3)
+Requirement already satisfied: jupyterlab-pygments in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbconvert->jupyter) (0.2.2)
+Requirement already satisfied: nbclient>=0.5.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbconvert->jupyter) (0.7.2)
+Requirement already satisfied: beautifulsoup4 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbconvert->jupyter) (4.11.2)
+Requirement already satisfied: mistune<3,>=2.0.3 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbconvert->jupyter) (2.0.5)
+Requirement already satisfied: defusedxml in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbconvert->jupyter) (0.7.1)
+Requirement already satisfied: jinja2>=3.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbconvert->jupyter) (3.1.2)
+Requirement already satisfied: markupsafe>=2.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbconvert->jupyter) (2.1.2)
+Requirement already satisfied: tinycss2 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbconvert->jupyter) (1.2.1)
+Requirement already satisfied: Send2Trash>=1.8.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from notebook->jupyter) (1.8.0)
+Requirement already satisfied: nbclassic>=0.4.7 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from notebook->jupyter) (0.5.2)
+Requirement already satisfied: terminado>=0.8.3 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from notebook->jupyter) (0.17.1)
+Requirement already satisfied: prometheus-client in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from notebook->jupyter) (0.16.0)
+Requirement already satisfied: ipython-genutils in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from notebook->jupyter) (0.2.0)
+Requirement already satisfied: argon2-cffi in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from notebook->jupyter) (21.3.0)
+Requirement already satisfied: qtpy>=2.0.1 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from qtconsole->jupyter) (2.3.0)
+Requirement already satisfied: jedi>=0.16 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from ipython>=7.23.1->ipykernel->jupyter) (0.18.2)
+Requirement already satisfied: backcall in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from ipython>=7.23.1->ipykernel->jupyter) (0.2.0)
+Requirement already satisfied: stack-data in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from ipython>=7.23.1->ipykernel->jupyter) (0.6.2)
+Requirement already satisfied: pickleshare in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from ipython>=7.23.1->ipykernel->jupyter) (0.7.5)
+Requirement already satisfied: decorator in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from ipython>=7.23.1->ipykernel->jupyter) (5.1.1)
+Requirement already satisfied: colorama in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from ipython>=7.23.1->ipykernel->jupyter) (0.4.6)
+Requirement already satisfied: python-dateutil>=2.8.2 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jupyter-client>=6.1.12->ipykernel->jupyter) (2.8.2)
+Requirement already satisfied: platformdirs>=2.5 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jupyter-core!=5.0.*,>=4.12->ipykernel->jupyter) (3.0.0)
+Requirement already satisfied: pywin32>=1.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jupyter-core!=5.0.*,>=4.12->ipykernel->jupyter) (305)
+Requirement already satisfied: jupyter-server>=1.8 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbclassic>=0.4.7->notebook->jupyter) (2.3.0)
+Requirement already satisfied: notebook-shim>=0.1.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbclassic>=0.4.7->notebook->jupyter) (0.2.2)
+Requirement already satisfied: jsonschema>=2.6 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbformat>=5.1->nbconvert->jupyter) (4.17.3)
+Requirement already satisfied: fastjsonschema in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbformat>=5.1->nbconvert->jupyter) (2.16.2)
+Requirement already satisfied: wcwidth in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from prompt-toolkit>=3.0.30->jupyter-console->jupyter) (0.2.6)
+Requirement already satisfied: pywinpty>=1.1.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from terminado>=0.8.3->notebook->jupyter) (2.0.10)
+Requirement already satisfied: argon2-cffi-bindings in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from argon2-cffi->notebook->jupyter) (21.2.0)
+Requirement already satisfied: soupsieve>1.2 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from beautifulsoup4->nbconvert->jupyter) (2.4)
+Requirement already satisfied: six>=1.9.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from bleach->nbconvert->jupyter) (1.16.0)
+Requirement already satisfied: webencodings in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from bleach->nbconvert->jupyter) (0.5.1)
+Requirement already satisfied: parso<0.9.0,>=0.8.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jedi>=0.16->ipython>=7.23.1->ipykernel->jupyter) (0.8.3)
+Requirement already satisfied: attrs>=17.4.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jsonschema>=2.6->nbformat>=5.1->nbconvert->jupyter) (22.2.0)
+Requirement already satisfied: pyrsistent!=0.17.0,!=0.17.1,!=0.17.2,>=0.14.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jsonschema>=2.6->nbformat>=5.1->nbconvert->jupyter) (0.19.3)
+Requirement already satisfied: jupyter-server-terminals in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jupyter-server>=1.8->nbclassic>=0.4.7->notebook->jupyter) (0.4.4)
+Requirement already satisfied: jupyter-events>=0.4.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jupyter-server>=1.8->nbclassic>=0.4.7->notebook->jupyter) (0.6.3)
+Requirement already satisfied: websocket-client in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jupyter-server>=1.8->nbclassic>=0.4.7->notebook->jupyter) (1.5.1)
+Requirement already satisfied: anyio>=3.1.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jupyter-server>=1.8->nbclassic>=0.4.7->notebook->jupyter) (3.6.2)
+Requirement already satisfied: cffi>=1.0.1 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from argon2-cffi-bindings->argon2-cffi->notebook->jupyter) (1.15.1)
+Requirement already satisfied: asttokens>=2.1.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from stack-data->ipython>=7.23.1->ipykernel->jupyter) (2.2.1)
+Requirement already satisfied: executing>=1.2.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from stack-data->ipython>=7.23.1->ipykernel->jupyter) (1.2.0)
+Requirement already satisfied: pure-eval in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from stack-data->ipython>=7.23.1->ipykernel->jupyter) (0.2.2)
+Requirement already satisfied: sniffio>=1.1 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from anyio>=3.1.0->jupyter-server>=1.8->nbclassic>=0.4.7->notebook->jupyter) (1.3.0)
+Requirement already satisfied: idna>=2.8 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from anyio>=3.1.0->jupyter-server>=1.8->nbclassic>=0.4.7->notebook->jupyter) (3.4)
+Requirement already satisfied: pycparser in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->notebook->jupyter) (2.21)
+Requirement already satisfied: rfc3986-validator>=0.1.1 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jupyter-events>=0.4.0->jupyter-server>=1.8->nbclassic>=0.4.7->notebook->jupyter) (0.1.1)
+Requirement already satisfied: rfc3339-validator in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jupyter-events>=0.4.0->jupyter-server>=1.8->nbclassic>=0.4.7->notebook->jupyter) (0.1.4)
+Requirement already satisfied: pyyaml>=5.3 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jupyter-events>=0.4.0->jupyter-server>=1.8->nbclassic>=0.4.7->notebook->jupyter) (6.0)
+Requirement already satisfied: python-json-logger>=2.0.4 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jupyter-events>=0.4.0->jupyter-server>=1.8->nbclassic>=0.4.7->notebook->jupyter) (2.0.7)
+Requirement already satisfied: jsonpointer>1.13 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jsonschema>=2.6->nbformat>=5.1->nbconvert->jupyter) (2.3)
+Requirement already satisfied: webcolors>=1.11 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jsonschema>=2.6->nbformat>=5.1->nbconvert->jupyter) (1.12)
+Requirement already satisfied: fqdn in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jsonschema>=2.6->nbformat>=5.1->nbconvert->jupyter) (1.5.1)
+Requirement already satisfied: uri-template in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jsonschema>=2.6->nbformat>=5.1->nbconvert->jupyter) (1.2.0)
+Requirement already satisfied: isoduration in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jsonschema>=2.6->nbformat>=5.1->nbconvert->jupyter) (20.11.0)
+Requirement already satisfied: arrow>=0.15.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from isoduration->jsonschema>=2.6->nbformat>=5.1->nbconvert->jupyter) (1.2.3)
+
+(visualization_plotting_practice) C:\David\my_repos_dwb\quick_test_prep>pip install numpy
+Collecting numpy
+  Downloading numpy-1.24.2-cp310-cp310-win_amd64.whl (14.8 MB)
+     ---------------------------------------- 14.8/14.8 MB 7.3 MB/s eta 0:00:00
+Installing collected packages: numpy
+Successfully installed numpy-1.24.2
+
+(visualization_plotting_practice) C:\David\my_repos_dwb\quick_test_prep>pip install scipy
+Collecting scipy
+  Downloading scipy-1.10.1-cp310-cp310-win_amd64.whl (42.5 MB)
+     ---------------------------------------- 42.5/42.5 MB 5.0 MB/s eta 0:00:00
+Requirement already satisfied: numpy<1.27.0,>=1.19.5 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from scipy) (1.24.2)
+Installing collected packages: scipy
+Successfully installed scipy-1.10.1
+
+(visualization_plotting_practice) C:\David\my_repos_dwb\quick_test_prep>pip install matplotlib
+Collecting matplotlib
+  Downloading matplotlib-3.7.0-cp310-cp310-win_amd64.whl (7.6 MB)
+     ---------------------------------------- 7.6/7.6 MB 8.7 MB/s eta 0:00:00
+Collecting pillow>=6.2.0
+  Downloading Pillow-9.4.0-cp310-cp310-win_amd64.whl (2.5 MB)
+     ---------------------------------------- 2.5/2.5 MB 8.3 MB/s eta 0:00:00
+Requirement already satisfied: packaging>=20.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from matplotlib) (23.0)
+Collecting pyparsing>=2.3.1
+  Using cached pyparsing-3.0.9-py3-none-any.whl (98 kB)
+Collecting fonttools>=4.22.0
+  Using cached fonttools-4.38.0-py3-none-any.whl (965 kB)
+Collecting cycler>=0.10
+  Using cached cycler-0.11.0-py3-none-any.whl (6.4 kB)
+Requirement already satisfied: python-dateutil>=2.7 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from matplotlib) (2.8.2)
+Collecting contourpy>=1.0.1
+  Downloading contourpy-1.0.7-cp310-cp310-win_amd64.whl (162 kB)
+     ---------------------------------------- 163.0/163.0 kB 9.5 MB/s eta 0:00:00
+Requirement already satisfied: numpy>=1.20 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from matplotlib) (1.24.2)
+Collecting kiwisolver>=1.0.1
+  Downloading kiwisolver-1.4.4-cp310-cp310-win_amd64.whl (55 kB)
+     ---------------------------------------- 55.3/55.3 kB 3.0 MB/s eta 0:00:00
+Requirement already satisfied: six>=1.5 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from python-dateutil>=2.7->matplotlib) (1.16.0)
+Installing collected packages: pyparsing, pillow, kiwisolver, fonttools, cycler, contourpy, matplotlib
+Successfully installed contourpy-1.0.7 cycler-0.11.0 fonttools-4.38.0 kiwisolver-1.4.4 matplotlib-3.7.0 pillow-9.4.0 pyparsing-3.0.9
+
+(visualization_plotting_practice) C:\David\my_repos_dwb\quick_test_prep>pip install opencv-python
+Collecting opencv-python
+  Downloading opencv_python-4.7.0.72-cp37-abi3-win_amd64.whl (38.2 MB)
+     ---------------------------------------- 38.2/38.2 MB 7.7 MB/s eta 0:00:00
+Requirement already satisfied: numpy>=1.21.2 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from opencv-python) (1.24.2)
+Installing collected packages: opencv-python
+Successfully installed opencv-python-4.7.0.72
+
+(visualization_plotting_practice) C:\David\my_repos_dwb\quick_test_prep>python -m pip install nbconvert[qtpdf]
+Requirement already satisfied: nbconvert[qtpdf] in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (7.2.9)
+Requirement already satisfied: jupyter-core>=4.7 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbconvert[qtpdf]) (5.2.0)
+Requirement already satisfied: traitlets>=5.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbconvert[qtpdf]) (5.9.0)
+Requirement already satisfied: markupsafe>=2.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbconvert[qtpdf]) (2.1.2)
+Requirement already satisfied: jupyterlab-pygments in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbconvert[qtpdf]) (0.2.2)
+Requirement already satisfied: nbclient>=0.5.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbconvert[qtpdf]) (0.7.2)
+Requirement already satisfied: bleach in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbconvert[qtpdf]) (6.0.0)
+Requirement already satisfied: packaging in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbconvert[qtpdf]) (23.0)
+Requirement already satisfied: defusedxml in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbconvert[qtpdf]) (0.7.1)
+Requirement already satisfied: beautifulsoup4 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbconvert[qtpdf]) (4.11.2)
+Requirement already satisfied: pygments>=2.4.1 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbconvert[qtpdf]) (2.14.0)
+Requirement already satisfied: pandocfilters>=1.4.1 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbconvert[qtpdf]) (1.5.0)
+Requirement already satisfied: nbformat>=5.1 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbconvert[qtpdf]) (5.7.3)
+Requirement already satisfied: tinycss2 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbconvert[qtpdf]) (1.2.1)
+Requirement already satisfied: jinja2>=3.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbconvert[qtpdf]) (3.1.2)
+Requirement already satisfied: mistune<3,>=2.0.3 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbconvert[qtpdf]) (2.0.5)
+Requirement already satisfied: platformdirs>=2.5 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jupyter-core>=4.7->nbconvert[qtpdf]) (3.0.0)
+Requirement already satisfied: pywin32>=1.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jupyter-core>=4.7->nbconvert[qtpdf]) (305)
+Requirement already satisfied: jupyter-client>=6.1.12 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbclient>=0.5.0->nbconvert[qtpdf]) (8.0.3)
+Requirement already satisfied: fastjsonschema in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbformat>=5.1->nbconvert[qtpdf]) (2.16.2)
+Requirement already satisfied: jsonschema>=2.6 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from nbformat>=5.1->nbconvert[qtpdf]) (4.17.3)
+Requirement already satisfied: soupsieve>1.2 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from beautifulsoup4->nbconvert[qtpdf]) (2.4)
+Requirement already satisfied: webencodings in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from bleach->nbconvert[qtpdf]) (0.5.1)
+Requirement already satisfied: six>=1.9.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from bleach->nbconvert[qtpdf]) (1.16.0)
+Collecting pyqtwebengine>=5.15
+  Using cached PyQtWebEngine-5.15.6-cp37-abi3-win_amd64.whl (182 kB)
+Requirement already satisfied: attrs>=17.4.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jsonschema>=2.6->nbformat>=5.1->nbconvert[qtpdf]) (22.2.0)
+Requirement already satisfied: pyrsistent!=0.17.0,!=0.17.1,!=0.17.2,>=0.14.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jsonschema>=2.6->nbformat>=5.1->nbconvert[qtpdf]) (0.19.3)
+Requirement already satisfied: tornado>=6.2 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jupyter-client>=6.1.12->nbclient>=0.5.0->nbconvert[qtpdf]) (6.2)
+Requirement already satisfied: python-dateutil>=2.8.2 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jupyter-client>=6.1.12->nbclient>=0.5.0->nbconvert[qtpdf]) (2.8.2)
+Requirement already satisfied: pyzmq>=23.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from jupyter-client>=6.1.12->nbclient>=0.5.0->nbconvert[qtpdf]) (25.0.0)
+Collecting PyQt5>=5.15.4
+  Using cached PyQt5-5.15.9-cp37-abi3-win_amd64.whl (6.8 MB)
+Collecting PyQt5-sip<13,>=12.11
+  Downloading PyQt5_sip-12.11.1-cp310-cp310-win_amd64.whl (78 kB)
+     ---------------------------------------- 78.4/78.4 kB 1.5 MB/s eta 0:00:00
+Collecting PyQtWebEngine-Qt5>=5.15.0
+  Using cached PyQtWebEngine_Qt5-5.15.2-py3-none-win_amd64.whl (60.0 MB)
+Collecting PyQt5-Qt5>=5.15.2
+  Using cached PyQt5_Qt5-5.15.2-py3-none-win_amd64.whl (50.1 MB)
+Installing collected packages: PyQtWebEngine-Qt5, PyQt5-Qt5, PyQt5-sip, PyQt5, pyqtwebengine
+Successfully installed PyQt5-5.15.9 PyQt5-Qt5-5.15.2 PyQt5-sip-12.11.1 PyQtWebEngine-Qt5-5.15.2 pyqtwebengine-5.15.6
+
+(visualization_plotting_practice) C:\David\my_repos_dwb\quick_test_prep>python -m pip install pandoc
+Collecting pandoc
+  Using cached pandoc-2.3.tar.gz (33 kB)
+  Preparing metadata (setup.py) ... done
+Collecting plumbum
+  Using cached plumbum-1.8.1-py3-none-any.whl (126 kB)
+Collecting ply
+  Using cached ply-3.11-py2.py3-none-any.whl (49 kB)
+Requirement already satisfied: pywin32 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from plumbum->pandoc) (305)
+Building wheels for collected packages: pandoc
+  Building wheel for pandoc (setup.py) ... done
+  Created wheel for pandoc: filename=pandoc-2.3-py3-none-any.whl size=33290 sha256=fb015f0c2acc0d3e7d2247a00a2960864ac587abaf14e36640341117a9877f4d
+  Stored in directory: c:\users\bball\appdata\local\pip\cache\wheels\76\27\c2\c26175310aadcb8741b77657a1bb49c50cc7d4cdbf9eee0005
+Successfully built pandoc
+Installing collected packages: ply, plumbum, pandoc
+Successfully installed pandoc-2.3 plumbum-1.8.1 ply-3.11
+
+(visualization_plotting_practice) C:\David\my_repos_dwb\quick_test_prep>pip install pandas
+Collecting pandas
+  Downloading pandas-1.5.3-cp310-cp310-win_amd64.whl (10.4 MB)
+     ---------------------------------------- 10.4/10.4 MB 3.1 MB/s eta 0:00:00
+Requirement already satisfied: numpy>=1.21.0 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from pandas) (1.24.2)
+Requirement already satisfied: python-dateutil>=2.8.1 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from pandas) (2.8.2)
+Collecting pytz>=2020.1
+  Downloading pytz-2022.7.1-py2.py3-none-any.whl (499 kB)
+     ---------------------------------------- 499.4/499.4 kB 4.5 MB/s eta 0:00:00
+Requirement already satisfied: six>=1.5 in c:\users\bball\miniconda3\envs\visualization_plotting_practice\lib\site-packages (from python-dateutil>=2.8.1->pandas) (1.16.0)
+Installing collected packages: pytz, pandas
+Successfully installed pandas-1.5.3 pytz-2022.7.1
+
+(visualization_plotting_practice) C:\David\my_repos_dwb\quick_test_prep>import pandas as pd
+'import' is not recognized as an internal or external command,
+operable program or batch file.
+
+(visualization_plotting_practice) C:\David\my_repos_dwb\quick_test_prep>python
+Python 3.10.9 | packaged by conda-forge | (main, Jan 11 2023, 15:15:40) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import pandas as pd
+>>> df = pd.read_csv(".\\datasets\\surnames.csv")
+>>> df.head()
+       name  rank    count  prop100k  cum_prop100k pctwhite pctblack pctapi pctaian pct2prace pcthispanic
+0     SMITH     1  2376206    880.85        880.85    73.35    22.22    0.4    0.85      1.63        1.56
+1   JOHNSON     2  1857160    688.44       1569.30    61.55     33.8   0.42    0.91      1.82         1.5
+2  WILLIAMS     3  1534042    568.66       2137.96    48.52    46.72   0.37    0.78      2.01         1.6
+3     BROWN     4  1380145    511.62       2649.58    60.71    34.54   0.41    0.83      1.86        1.64
+4     JONES     5  1362755    505.17       3154.75    57.69    37.73   0.35    0.94      1.85        1.44
+>>> df_french_01 = pd.read_csv(.\\datasets\\CausesOfDeath_France_2001-2008.csv)
