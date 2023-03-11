@@ -115,10 +115,13 @@
 *.md             text eol=lf
 *.txt            text eol=lf
 *.cfg            text eol=lf
-*.bak            text eol=lf  ## <strike>.gitignore shouldn't 
+*.bak            text eol=lf
+                              ## <strike>.gitignore shouldn't 
                               #+ let any through</strike>
-*.log            text eol=lf  #+ ditto
-*.out            text eol=lf  #+ ditto
+*.log            text eol=lf
+                              #+ ditto
+*.out            text eol=lf
+                              #+ ditto
 .gitignore       text eol=lf
 .gitattributes   text eol=lf
 
@@ -136,7 +139,8 @@
 ## Denote all files that are truly binary and should not be modified
 *.dll           binary
 *.exe           binary
-*.pyc           binary  ##  I haven't used any for the project, yet,
+*.pyc           binary
+                        ##  I haven't used any for the project, yet,
                         ##+ but it's my general python utilities
                         ##+ repo, so I'll leave it in.
                         ##  .gitignore should be set to keep out
