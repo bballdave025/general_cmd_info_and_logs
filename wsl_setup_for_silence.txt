@@ -1,0 +1,112 @@
+C:\>dir
+ Volume in drive C is Windows-SSD
+ Volume Serial Number is AE3F-8272
+
+ Directory of C:\
+
+08/08/2022  06:19 AM    <DIR>          AllenBooks
+03/11/2023  12:27 PM    <DIR>          David
+08/27/2021  06:44 PM    <DIR>          Drivers
+11/16/2022  04:11 PM    <DIR>          LDPlayer
+12/07/2019  02:14 AM    <DIR>          PerfLogs
+02/18/2023  12:43 PM    <DIR>          Program Files
+02/18/2023  12:43 PM    <DIR>          Program Files (x86)
+08/25/2020  07:43 PM    <DIR>          silence
+02/25/2023  05:53 PM    <DIR>          to_upload_tmp
+05/02/2022  06:24 AM    <DIR>          Users
+02/24/2023  01:33 PM    <DIR>          Windows
+01/27/2022  08:54 PM    <DIR>          Wondershare UniConverter
+07/11/2020  05:09 PM    <DIR>          wsl
+08/28/2020  06:58 PM    <DIR>          wsl_silence
+               0 File(s)              0 bytes
+              14 Dir(s)  62,642,819,072 bytes free
+
+C:\>dir wsl
+ Volume in drive C is Windows-SSD
+ Volume Serial Number is AE3F-8272
+
+ Directory of C:\wsl
+
+07/11/2020  05:09 PM    <DIR>          .
+07/11/2020  05:09 PM    <DIR>          ..
+07/11/2020  02:08 PM    <DIR>          pulseaudio
+06/25/2020  06:44 PM         5,003,556 pulseaudio-1.1.zip
+07/11/2020  05:11 PM       224,629,284 Ubuntu.appx
+06/24/2020  08:50 AM         2,204,914 Xming-6-9-0-31-setup.exe
+06/26/2020  09:57 AM        32,623,673 Xming-fonts-7-7-0-10-setup.exe
+               4 File(s)    264,461,427 bytes
+               3 Dir(s)  62,642,470,912 bytes free
+
+C:\>dir wsl_silence
+ Volume in drive C is Windows-SSD
+ Volume Serial Number is AE3F-8272
+
+ Directory of C:\wsl_silence
+
+08/28/2020  06:58 PM    <DIR>          .
+08/28/2020  06:58 PM    <DIR>          ..
+08/28/2020  06:57 PM    <DIR>          pulseaudio
+               0 File(s)              0 bytes
+               3 Dir(s)  62,641,827,840 bytes free
+
+C:\>dir wsl\pulseaudio
+ Volume in drive C is Windows-SSD
+ Volume Serial Number is AE3F-8272
+
+ Directory of C:\wsl\pulseaudio
+
+07/11/2020  02:08 PM    <DIR>          .
+07/11/2020  02:08 PM    <DIR>          ..
+07/11/2020  02:08 PM    <DIR>          bin
+07/11/2020  02:08 PM    <DIR>          etc
+07/11/2020  02:08 PM    <DIR>          lib
+07/11/2020  02:08 PM    <DIR>          share
+               0 File(s)              0 bytes
+               6 Dir(s)  62,641,893,376 bytes free
+
+C:\>dir wsl
+ Volume in drive C is Windows-SSD
+ Volume Serial Number is AE3F-8272
+
+ Directory of C:\wsl
+
+07/11/2020  05:09 PM    <DIR>          .
+07/11/2020  05:09 PM    <DIR>          ..
+07/11/2020  02:08 PM    <DIR>          pulseaudio
+06/25/2020  06:44 PM         5,003,556 pulseaudio-1.1.zip
+07/11/2020  05:11 PM       224,629,284 Ubuntu.appx
+06/24/2020  08:50 AM         2,204,914 Xming-6-9-0-31-setup.exe
+06/26/2020  09:57 AM        32,623,673 Xming-fonts-7-7-0-10-setup.exe
+               4 File(s)    264,461,427 bytes
+               3 Dir(s)  62,641,655,808 bytes free
+
+C:\>
+C:\>
+C:\>dir wsl_silence
+ Volume in drive C is Windows-SSD
+ Volume Serial Number is AE3F-8272
+
+ Directory of C:\wsl_silence
+
+08/28/2020  06:58 PM    <DIR>          .
+08/28/2020  06:58 PM    <DIR>          ..
+08/28/2020  06:57 PM    <DIR>          pulseaudio
+               0 File(s)              0 bytes
+               3 Dir(s)  62,641,434,624 bytes free
+
+C:\>dir wsl_silence\pulseaudio
+ Volume in drive C is Windows-SSD
+ Volume Serial Number is AE3F-8272
+
+ Directory of C:\wsl_silence\pulseaudio
+
+08/28/2020  06:57 PM    <DIR>          .
+08/28/2020  06:57 PM    <DIR>          ..
+08/28/2020  06:57 PM    <DIR>          bin
+08/28/2020  06:57 PM    <DIR>          etc
+08/28/2020  06:57 PM    <DIR>          lib
+08/28/2020  06:57 PM    <DIR>          share
+               0 File(s)              0 bytes
+               6 Dir(s)  62,643,347,456 bytes free
+
+C:\>
