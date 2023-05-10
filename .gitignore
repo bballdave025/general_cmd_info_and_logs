@@ -1,14 +1,20 @@
-#@brief   A .gitignore file for a Python utilities
+#@brief   A .gitignore file for a reference repo
 #@file    .gitignore
 #@author  David BLACK  GH: @bballdave025
 #@since   2023-03-10
 #
 #  -v- In case this file gets copied to another repo without changing -v-
 #+ -v- this stuff, there will be a reference to the previous repo     -v-
-#@orig_repo  dwb_python_util
-#@project    dwb_util
-#@package    dwb_python_util
+#@orig_repo  general_reference_and_logs
+#@project    None for now.
 
 # Specific directories
-**/__pycache__
+**/__pycache__/
+__pycache__/
+
+# None of those backup files from Linux
+*~
+
+# None of the Microsoft backup files
+~$*
 
